@@ -1,0 +1,25 @@
+<GridLayout rows="*, 60, *">
+    <ns-taks-banner [onNumber]="NumberTaks"></ns-taks-banner>
+
+    <ListView [items]="TaksList" (itemTap)="onItemTap($event)" class="tt-taks" separatorColor="transparent">
+        <ng-template let-taks="item" class="tt-taks--template">
+            <FlexboxLayout flexDirection="row" class="tt-item">
+                <Image src="https://w7.pngwing.com/pngs/209/1016/png-transparent-computer-icons-task-id-miscellaneous-computer-logo.png" class="thumb img-circle tt-image"></Image>
+                <Label [text]="taks.name" class="t-12 tt-label" verticalAlignment="center" style="width: 60%"></Label>
+                <Button class="btn-remove" text="x" (tap)="delete_taks(taks._id)"></Button>
+            </FlexboxLayout>
+        </ng-template>
+    </ListView>
+
+    
+    <!-- <GridLayout row="2" *ngIf="TaksList.length === 0" class="placeholder"
+        rows="*">
+        <StackLayout verticalAlignment="center">
+            <Image [src]="placeholderImage"></Image>
+            <Label text="No hay datos"></Label>
+        </StackLayout>
+    </GridLayout> -->
+
+    <Button row="2" text="🚪" class="fab-left" (tap)="logout()"></Button>
+    <Button row="2" text="+" class="fab" (tap)="displayForm()"></Button>
+</GridLayout>

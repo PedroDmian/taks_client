@@ -1,0 +1,77 @@
+.list-item {
+    padding: 10 15;
+    background-color: #fff;
+    border-bottom-width: 1;
+    border-bottom-color: #FBF8F8;
+}
+
+.list-item.complete Label {
+    opacity: 0.1;
+}
+
+.list-item .title {
+    color: #a3979e;
+    font-weight: 400;
+    font-size: 18;
+}
+
+.list-item .description {
+    color: #87797f;
+    font-size: 14;
+}
+
+.fab {
+    horizontal-align: right;
+    vertical-align: bottom;
+    text-align: center;
+    margin: 0 20 50 0;
+    font-size: 22;
+    padding: 0;
+    border-width: 1;
+    color: #fff;
+    border-radius: 50;
+    width: 50;
+    height: 50;
+    background-color: #1BC5BD;
+}
+
+.fab-left {
+    horizontal-align: left;
+    vertical-align: bottom;
+    text-align: center;
+    margin: 0 20 50 20;
+    font-size: 22;
+    padding: 0;
+    border-width: 1;
+    color: #fff;
+    border-radius: 50;
+    width: 50;
+    height: 50;
+    background-color: #A4734A;
+}
+
+.tt-taks {
+    margin-top: 550px;
+    width: 85%;
+    border: none !important;
+    height: 85%;
+}
+
+.tt-label {
+    border: none !important;
+    font-weight: bold;
+    font-size: 15;
+}
+
+.tt-label .tt-description {
+    width: 100%;
+    display: block;
+}
+
+.btn-remove {
+    width: 25px !important;
+    height: 10px;
+    border-radius: 25px;
+    background-color: #F64E60;
+    color: #fff;
+}

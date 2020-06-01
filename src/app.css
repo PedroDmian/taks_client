@@ -1,0 +1,23 @@
+@import "~@nativescript/theme/css/core.css";
+@import "~@nativescript/theme/css/blue.css";
+
+@font-face {
+	font-family: 'Roboto-Light';
+    src: url('./assets/fonts/Roboto-Light.ttf');
+
+    font-family: 'Roboto-Bold';
+    src: url('./assets/fonts/Roboto-Bold.ttf');
+
+    font-family: 'Roboto-Medium';
+    src: url('./assets/fonts/Roboto-Medium.ttf');
+
+    font-family: 'Roboto-Regular';
+    src: url('./assets/fonts/Roboto-Regular.ttf');
+}
+
+* {
+    font-family: 'Roboto-Light' !important;
+}
+
+/* Place any CSS rules you want to apply on both iOS and Android here.
+This is where the vast majority of your CSS code goes. */

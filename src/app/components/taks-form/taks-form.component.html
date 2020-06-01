@@ -1,0 +1,19 @@
+<!-- <Button text="taks-form works!" class="btn btn-primary"></Button> -->
+
+<GridLayout rows="auto, *" [class.night]="!isDayTime">
+    <StackLayout class="action-bar" columns="*, *" width="100%">
+        <Button class="btn-cancel" text="Regresar" (tap)="cancel()"></Button>
+        <Button col="1" class="btn-save" text="Save" (tap)="save()"></Button>
+    </StackLayout>
+    <GridLayout rows="auto, auto, 20, auto, auto, 20, auto, auto, *, auto, 20, auto" class="form-container" row="1">
+        <!-- Task Name Input -->
+        <Label class="label" text="Tarea*"></Label>
+        <TextField row="1" text="" [(ngModel)]="Taks.name"></TextField>
+
+        <!-- Task Description Input -->
+        <Label row="3" class="label" text="Description"></Label>
+        <TextView row="4" class="input textarea" hint="Task Description" text="" [(ngModel)]="Taks.description"></TextView>
+    </GridLayout>
+</GridLayout>
+
+<!-- [formGroup]="form" -->

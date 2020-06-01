@@ -1,0 +1,14 @@
+<GridLayout class="tt-banner" orientation="horizontal" height="100%">
+    
+    <Label class="tt-title" text="All List"></Label>
+
+    <Label class="tt-today" [text]="today | date"></Label>
+
+    <Label class="tt-number">
+        <FormattedString>
+            <Span class="number" text="{{ onNumber }} Items"></Span>
+        </FormattedString>
+    </Label>
+
+    <!-- <Label class="tt-border-banner"></Label> -->
+</GridLayout>
